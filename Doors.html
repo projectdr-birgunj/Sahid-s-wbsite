@@ -1,0 +1,185 @@
+<!DOCKTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+	<title>home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">Aman Door & Hardware Suppliers</div>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li>
+					<a href="index.html" class="active">Home</a>
+				</li>
+				<li>
+				    <a href="category.html">Category</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<!-- HEADING -->
+<!-- ========================================================================== -->
+
+
+<!-- MAIN -->
+<!-- ========================================================================== -->
+<div class="c">
+
+  <input type="radio" name="a" id="cr-1" checked>
+  <label for="cr-1" style="--hue: 32"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%">What do you know?</h2>
+    <img src="IMG_0918.PNG" alt="Snow on leafs">
+  </div>
+
+  <input type="radio" name="a" id="cr-2">
+  <label for="cr-2" style="--hue: 82"></label>
+  <div class="ci" style="--z: 3">
+    <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%">Look from inside?</h2>
+    <img src="IMG_0918.PNG">
+  </div>
+
+  <input type="radio" name="a" id="cr-3">
+  <label for="cr-3" style="--hue: 40"></label>
+  <div class="ci" style="--z: 2">
+    <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%">Look from edges?</h2>
+    <img src="IMG_0918.PNG" alt="Mountains and houses">
+  </div>
+
+  <input type="radio" name="a" id="cr-4">
+  <label for="cr-4" style="--hue: 210"></label>
+  <div class="ci" style="--z: 1">
+    <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%">look from above?</h2>
+    <img src="IMG_0918.PNG" alt="Sky and mountains">
+  </div>
+
+</div>
+
+
+</div>
+
+	<footer>
+		<div class="main">
+		  <div class="col1">
+			<h3 class="heading">
+			  About the store
+			</h3>
+			<ul>
+			  <li>
+				<a href="./index.html">
+				  Home
+				</a>
+			  </li>
+			  <li>
+				<a href="./category.html">
+				  Category
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  About us
+				</a>
+			  </li>
+			</ul>
+		  </div>
+	  
+		  <div class="col2">
+			<h3 class="heading">
+			  Created By:
+			</h3>
+			<div class="languages">
+				<a href = "mailto: projectdr.birgunj@gmail.com"></a>
+			</div>
+		  </div>
+	  
+		  <div class="col3">
+			<h3 class="heading">
+			  Get in touch
+			</h3>
+			<div class="social">
+			  <a href=https://www.facebook.com/diwash.kushwaha/>
+				<ion-icon name="logo-facebook"></ion-icon>
+			  </a>
+			  <a href="https://twitter.com/diwash_kushwaha">
+				<ion-icon name="logo-twitter"></ion-icon>
+			  </a>
+			  <a href="https://api.whatsapp.com/send?phone=+9779802057804">Send Message</a>
+				<ion-icon name="logo-whatsapp"></ion-icon>
+			  </a>
+			</div>
+		  </div>
+		</div>
+
+
+
+
+
+    </footer>
+	  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+      hamburger=document.querySelector(".hamburger");
+      hamburger.onclick=function(){
+          navBar=document.querySelector(".nav-bar");
+          navBar2=document.querySelector(".overlay");
+          navBar.classList.toggle("active");
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+}
+      }
+      
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      }
+  </script>
+
+</body>
+</html>
+          
