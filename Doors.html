@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 	<title>home</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="Door-style.css">
 </head>
 <body>
 	<header>
@@ -18,10 +18,10 @@
 		<nav class="nav-bar">
 			<ul>
 				<li>
-					<a href="index.html" class="active">Home</a>
+					<a href="index.html">Home</a>
 				</li>
 				<li>
-				    <a href="category.html">Category</a>
+				    <a href="category.html" class="active" >Category</a>
 				</li>
 				<li>
 					<a href="about.html">About</a>
@@ -39,13 +39,13 @@
 
 <!-- MAIN -->
 <!-- ========================================================================== -->
-<div class="c">
+<div class="c" id="myDIV">
 
   <input type="radio" name="a" id="cr-1" checked>
   <label for="cr-1" style="--hue: 32"></label>
   <div class="ci" style="--z: 4">
     <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%">What do you know?</h2>
-    <img src="IMG_0918.PNG" alt="Snow on leafs">
+    <img src="IMG_0918.PNG">
   </div>
 
   <input type="radio" name="a" id="cr-2">
@@ -59,14 +59,14 @@
   <label for="cr-3" style="--hue: 40"></label>
   <div class="ci" style="--z: 2">
     <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%">Look from edges?</h2>
-    <img src="IMG_0918.PNG" alt="Mountains and houses">
+    <img src="IMG_0918.PNG">
   </div>
 
   <input type="radio" name="a" id="cr-4">
   <label for="cr-4" style="--hue: 210"></label>
   <div class="ci" style="--z: 1">
     <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%">look from above?</h2>
-    <img src="IMG_0918.PNG" alt="Sky and mountains">
+    <img src="IMG_0918.PNG">
   </div>
 
 </div>
@@ -92,7 +92,7 @@
 				</a>
 			  </li>
 			  <li>
-				<a href="#">
+				<a href="about.html">
 				  About us
 				</a>
 			  </li>
@@ -104,7 +104,7 @@
 			  Created By:
 			</h3>
 			<div class="languages">
-				<a href = "mailto: projectdr.birgunj@gmail.com"></a>
+				<a href = "mailto: projectdr.birgunj@gmail.com">Send Mail</a>
 			</div>
 		  </div>
 	  
@@ -119,7 +119,7 @@
 			  <a href="https://twitter.com/diwash_kushwaha">
 				<ion-icon name="logo-twitter"></ion-icon>
 			  </a>
-			  <a href="https://api.whatsapp.com/send?phone=+9779802057804">Send Message</a>
+			  <a href="https://api.whatsapp.com/send?phone=+9779802057804"></a>
 				<ion-icon name="logo-whatsapp"></ion-icon>
 			  </a>
 			</div>
@@ -146,7 +146,7 @@
               x.style.display = "block";
           } else {
               x.style.display = "none";
-}
+		}
       }
       
 
@@ -165,7 +165,7 @@
 
       function showSlides(n) {
       let i;
-      let slides = document.getElementsByClassName("mySlides");
+      let slides = document.getElementsByClassName("c");
       let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
@@ -182,4 +182,3 @@
 
 </body>
 </html>
-          
