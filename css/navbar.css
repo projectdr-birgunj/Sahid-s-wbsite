@@ -374,7 +374,7 @@ footer {
 		top: 50%;
 		padding: 3px;
 		width: 60%;
-		height: 280px;
+		height: 200px;
 		background: linear-gradient(to right, red, purple);
 		justify-content: center;
 	}
