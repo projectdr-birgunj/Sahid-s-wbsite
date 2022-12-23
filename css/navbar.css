@@ -374,7 +374,7 @@ footer {
 		top: 50%;
 		padding: 3px;
 		width: 60%;
-		height: 200px;
+		height: 280px;
 		background: linear-gradient(to right, red, purple);
 		justify-content: center;
 	}
@@ -390,6 +390,10 @@ footer {
 		border: 2px solid red;
     height: 40%;
 	}
+
+  .float-child a img {
+    height: 200px
+  }
 }
 
 @media (max-width: 500px) {
