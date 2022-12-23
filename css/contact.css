@@ -209,7 +209,7 @@ footer {
     .navbar-container input[type="checkbox"] {
       position: absolute;
       display: block;
-      height: 300px;
+      height: 30px;
       width: 30px;
       top: 20px;
       right: 20px;
