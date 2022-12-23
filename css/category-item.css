@@ -160,7 +160,7 @@ nav {
 }
 
 .container {
-  width: auto%;
+  width: auto;
   height: 580px;
   border: 5px;
   margin: 80px 80px;
@@ -443,7 +443,7 @@ footer {
     width: auto;
     height: 280px;
     border: 5px;
-    margin: 80px 80px;
+    margin: 40px 40px;
     background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
   }
   
