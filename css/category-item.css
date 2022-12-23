@@ -153,14 +153,14 @@ nav {
     color: #333;
 }
 
-#splice {
+#name {
     border: 5px;
     margin: 5px;
     font-size: 1.5rem;
     /* border: 2px solid black; */
 }
 
-.splice-container {
+.container {
     /* border: 2px solid black; */
     border: 5px;
     margin: 80px 40px;
