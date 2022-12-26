@@ -11,6 +11,7 @@
 }
 
 body {
+  background: linear-gradient(to right, rgb(56, 52, 52), rgb(240, 216, 240));
   margin: 0%;
   padding: 0%;
   font-family: "Poppins", sans-serif;
@@ -88,16 +89,22 @@ body {
 }
 
 .menu-highlight{
-    background: #d3d3d3;
-    border-radius: 35px;
-    padding: 0px 20px;
-    line-height: 50px !important;
-    margin: auto;
-   }
+  background: #d3d3d3;
+  border-radius: 35px;
+  padding: 0px 20px;
+  line-height: 50px !important;
+  margin: auto;
+}
 
-.contact {
-  border: 2px;
-  box-shadow: 5px 10px #888888;
+.contact1 {
+  position: relative;
+  margin: 20px;
+  display: block;
+  left: 8%;
+  width: 80%;
+  height: auto;
+  /* border: 2px; */
+  box-shadow: 5px 10px 5px 10px #cc0808;
 }
 
 .about {
@@ -110,14 +117,15 @@ body {
 
 .paragraph {
   display: flex;
-  justify-content: center;
+  /* float: left; */
+  width: 50%;
   margin: 10px 40px 10px 40px;
   font-family: 'Candal', sans-serif;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 500%;
+  /* font-family: 'Fira Sans Condensed', sans-serif; */
+  /* font-weight: 500%; */
   font-size: 2rem;
   text-align: justify;
-  text-justify: inter-word;
+  /* text-justify: inter-word; */
 }
 
 .maps  {
