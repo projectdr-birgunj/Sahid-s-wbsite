@@ -42,9 +42,9 @@
 		</a>
 	</div>
 
-    <div class="product-page">
+    <div class="product-page" id="blur">
         <div class="row" >
-            <div class="column"><a class="lightbox" href="#dog">
+            <div class="column"><a class="lightbox" onclick="toggle()" href="#dog">
 				<img src="../img/Door-1.png"/>
 			 </a> 
 			 <div class="lightbox-target" id="dog">
@@ -168,6 +168,13 @@
 		  </div>
 		</div>
 	</footer>
+
+    <script type="text/javascript">
+        function toggle() {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        }
+    </script>
 	  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
