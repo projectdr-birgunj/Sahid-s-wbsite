@@ -596,6 +596,7 @@ footer {
   .float-container {
     margin: 20px 10px ;
   }
+
   .catalouge-item {
 		margin-left: 20%;
 		overflow: hidden;
@@ -612,6 +613,14 @@ footer {
     height: 260px;
     border: 5px;
     margin: 10px 10px;
+    background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
+  }
+
+  .product-page {
+    width: auto;
+    height: auto;
+    border: 5px;
+    margin: 20px;
     background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
   }
   
