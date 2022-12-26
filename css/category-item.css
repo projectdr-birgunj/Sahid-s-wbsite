@@ -167,6 +167,10 @@ nav {
   background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
 }
 
+.container#blur .active {
+  filter: blur(20px);
+}
+
 
 .product-page {
   width: auto;
@@ -243,6 +247,7 @@ nav {
     bottom: 0;
     max-height: 0%;
     max-width: 0%;
+    width: auto;
     border: 5px solid white;
     /* box-shadow: 80px 80px 80px rgba(0,0,0,.3); */
     box-sizing: border-box;
@@ -441,6 +446,18 @@ footer {
     width: 50%;
     object-fit: cover;
   }
+
+  .lightbox-target img {
+    margin: auto;
+    /* margin-top: 65px; */
+    position: relative;
+    top: 10%;
+    left: 7%;
+    right: 10%;
+    bottom: 0;
+    width: 85%;
+    height: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -620,6 +637,7 @@ footer {
     top: 0%;
     left: 5%; 
     right: 5%;
+    margin-left: 0;
     width: 90%;
     object-fit: cover;
   }
@@ -629,10 +647,10 @@ footer {
     /* margin-top: 65px; */
     position: relative;
     top: 15%;
-    left: 10%;
+    left: 7%;
     right: 10%;
     bottom: 0;
-    width: 100%;
+    width: 85%;
     height: 80%;
   }
 }
