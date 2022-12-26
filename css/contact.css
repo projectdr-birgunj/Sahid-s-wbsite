@@ -95,6 +95,44 @@ body {
     margin: auto;
    }
 
+.contact {
+  border: 2px;
+  box-shadow: 5px 10px #888888;
+}
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  font-weight: 1000;
+  justify-content: center;
+  color: #333;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+  margin: 10px 40px 10px 40px;
+  font-family: 'Candal', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 500%;
+  font-size: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.maps  {
+  top: 70px;
+  width: auto;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.custom-google-map {
+  top: 70px;
+
+}
 
 /* FOOTER SECTION STARTS  */
 footer {
@@ -190,166 +228,166 @@ footer {
   
   /* FOOTER SECTION ENDS  */
 
-  @media (max-width: 768px) {
-    .navbar {
-      opacity: 0.95;
-    }
-  
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines {
-      display: block;
-    }
-  
-    .navbar-container {
-      display: block;
-      position: relative;
-      height: 600px;
-    }
-  
-    .navbar-container input[type="checkbox"] {
-      position: absolute;
-      display: block;
-      height: 30px;
-      width: 30px;
-      top: 20px;
-      right: 20px;
-      z-index: 5;
-      opacity: 0;
-    }
-  
-    .navbar-container .hamburger-lines {
-      display: block;
-      height: 23px;
-      width: 35px;
-      position: absolute;
-      top: 19px;
-      right: 20px;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .navbar-container .hamburger-lines .line {
-      display: block;
-      height: 4px;
-      width: 100%;
-      border-radius: 10px;
-      background: #333;
-    }
-  
-    .navbar-container .hamburger-lines .line1 {
-      transform-origin: 0% 0%;
-      transition: transform 0.4s ease-in-out;
-    }
-  
-    .navbar-container .hamburger-lines .line2 {
-      transition: transform 0.2s ease-in-out;
-    }
-  
-    .navbar-container .hamburger-lines .line3 {
-      transform-origin: 0% 100%;
-      transition: transform 0.4s ease-in-out;
-    }
-  
-    .navbar .menu-items {
-      padding-top: 100px;
-      background: #fff;
-      height: 100vh;
-      max-width: 300px;
-      transform: translate(-150%);
-      display: flex;
-      flex-direction: column;
-      margin-top: 65px;
-      margin-left: -40px;
-      padding-left: 50px;
-      transition: transform 0.5s ease-in-out;
-      box-shadow: 5px 0px 10px 0px #aaa;
-      z-index: 1;
-    }
-    
-    .navbar .menu-items li {
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-  
-    .logo-img {
-      float: left;
-      width: 50px;
-      position: absolute;
-      margin-top: 7.5px;
-      left: 15px;
-      font-size: 2rem;
-    }
-  
-    .logo-text {
-      margin-top: 15px;
-      margin-left: 95px;
-      float: left;
-    }
-  
-    .logo-text span {
-      font-size: 120%;
-      font-weight: 500;
-    }
-  
-    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-      transform: translateX(0);
-    }
-  
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-      transform: rotate(35deg);
-    }
-  
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-      transform: scaleY(0);
-    }
-  
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-      transform: rotate(-35deg);
-    }
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
 
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 600px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    z-index: 1;
   }
   
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .logo-img {
+    float: left;
+    width: 50px;
+    position: absolute;
+    margin-top: 7.5px;
+    left: 15px;
+    font-size: 2rem;
+  }
+
+  .logo-text {
+    margin-top: 15px;
+    margin-left: 95px;
+    float: left;
+  }
+
+  .logo-text span {
+    font-size: 120%;
+    font-weight: 500;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+
+}
+  
 @media (max-width: 500px) {
-    html {
-        font-size: 65%;
-    }
+html {
+  font-size: 65%;
+}
 
-    .navbar .menu-items li{
-        margin-top: 65px;
-        font-size: 1.6rem;
-    }
+.navbar .menu-items li{
+  margin-top: 65px;
+  font-size: 1.6rem;
+}
 
-    .logo-img {
-        /* position: absolute; */
-        /* margin-left: 60px; */
-        float: left;
-        width: 50px;
-        position: absolute;
-        margin-top: 7.5px;
-        left: 15px;
-        font-size: 2rem;
-        top: 6px;
-    }
+.logo-img {
+  /* position: absolute; */
+  /* margin-left: 60px; */
+  float: left;
+  width: 50px;
+  position: absolute;
+  margin-top: 7.5px;
+  left: 15px;
+  font-size: 2rem;
+  top: 6px;
+}
 
-    .logo-text {
-        margin-top: 25px;
-        margin-left: 95px;
-        float: left;
-    }
+.logo-text {
+  margin-top: 25px;
+  margin-left: 95px;
+  float: left;
+}
 
-    .logo-text span {
-        font-size: 120%;
-        font-weight: 500;
-    }
+.logo-text span {
+  font-size: 120%;
+  font-weight: 500;
+}
 
-    .navbar .menu-items li {
-        margin-bottom: 2.5rem;
-        font-size: 1.8rem;
-        font-weight: 500;
-    }
+.navbar .menu-items li {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 }
 
 /* try for icons stick */
