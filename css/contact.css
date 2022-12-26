@@ -103,28 +103,43 @@ nav {
 
 
 .contact {
-  margin-top: 180px;
-  margin-bottom: 150px;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-.contact-icon {
+i.fa-solid.fa-address-book::before{
+  margin: 25px 15px 25px 100px;
+  display: inline;
+  display: block;
+  font-size: larger;
+}
+
+i.fa-solid.fa-phone {
+  margin: 0px 5px 0px 20px;
+}
+
+i.fa-solid.fa-location-dot::before{
+  margin: 25px 15px 25px 100px;
+  display: inline;
   display: block;
   font-size: larger;
 }
 
 .about {
-
-    margin-top: 50px;
-    display: flex;
-    font-weight: 1000;
-    justify-content: center;
-    color: #333;
+  margin-top: 100px;
+  display: flex;
+  font-weight: 1000;
+  justify-content: center;
+  color: #333;
 }
 
 .paragraph {
+
   display: flex;
   justify-content: center;
-  margin: 10px 40px 10px 40px;
+  margin: 28px 40px 10px 0px;
   font-family: 'Candal', sans-serif;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 500%;
@@ -132,6 +147,10 @@ nav {
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 50px;
+}
+
+.map {
+  text-align: center
 }
 
 a{
