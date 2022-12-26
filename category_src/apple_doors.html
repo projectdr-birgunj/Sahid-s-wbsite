@@ -43,13 +43,13 @@
 	</div>
 
     <div class="product-page" id="blur">
-        <div class="row" >
+        <div class="row" id="blur" >
             <div class="column"><a class="lightbox" onclick="toggle()" href="#dog">
 				<img src="../img/Door-1.png"/>
 			 </a> 
 			 <div class="lightbox-target" id="dog">
 				<img id="lightbox-img" src="../img/Door-1.png"/>
-				<a class="lightbox-close" href="./apple_doors.html"></a>
+				<a class="lightbox-close" href="./apple_doors.html" onclick="toggle()"></a>
 			 </div></div>
             <div class="column"><a class="lightbox" href="#dog">
 				<img src="../img/door-handles-6.png"/>
@@ -172,7 +172,7 @@
     <script type="text/javascript">
         function toggle() {
         var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
+        blur.classList.toggle('active');
         }
     </script>
 	  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

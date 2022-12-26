@@ -17,10 +17,23 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.menu-highlight {
+  background: #d3d3d3;
+  border-radius: 35px;
+  padding: 0px 20px;
+  line-height: 50px !important;
+  margin: auto;
+}
+   
 .navbar {
   padding: 0%;
   box-shadow: 0px 5px 10px 0px #aaa;
-  position: static;
+  position: sticky;
   width: 100%;
   background: #fff;
   color: #000;
@@ -88,58 +101,42 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.menu-highlight{
-  background: #d3d3d3;
-  border-radius: 35px;
-  padding: 0px 20px;
-  line-height: 50px !important;
-  margin: auto;
+
+.contact {
+  margin-top: 180px;
+  margin-bottom: 150px;
 }
 
-.contact1 {
-  position: relative;
-  margin: 20px;
+.contact-icon {
   display: block;
-  left: 8%;
-  width: 80%;
-  height: auto;
-  /* border: 2px; */
-  box-shadow: 5px 10px 5px 10px #cc0808;
+  font-size: larger;
 }
 
 .about {
-  margin-top: 50px;
-  display: flex;
-  font-weight: 1000;
-  justify-content: center;
-  color: #333;
+
+    margin-top: 50px;
+    display: flex;
+    font-weight: 1000;
+    justify-content: center;
+    color: #333;
 }
 
 .paragraph {
   display: flex;
-  /* float: left; */
-  width: 50%;
+  justify-content: center;
   margin: 10px 40px 10px 40px;
   font-family: 'Candal', sans-serif;
-  /* font-family: 'Fira Sans Condensed', sans-serif; */
-  /* font-weight: 500%; */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 500%;
   font-size: 2rem;
   text-align: justify;
-  /* text-justify: inter-word; */
+  text-justify: inter-word;
+  margin-bottom: 50px;
 }
 
-.maps  {
-  top: 70px;
-  width: auto;
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
-}
-
-.custom-google-map {
-  top: 70px;
-
+a{
+  /* font-size: larger; */
+  font-weight: bold;
 }
 
 /* FOOTER SECTION STARTS  */
@@ -233,7 +230,7 @@ footer {
 .social a:hover ion-icon {
   color: #5ac1d8;
 }
-  
+
   /* FOOTER SECTION ENDS  */
 
 @media (max-width: 768px) {
@@ -247,9 +244,10 @@ footer {
   }
 
   .navbar-container {
+    border: 1px solid white;
     display: block;
     position: relative;
-    height: 600px;
+    /* height: 600px; */
   }
 
   .navbar-container input[type="checkbox"] {
@@ -313,7 +311,7 @@ footer {
     box-shadow: 5px 0px 10px 0px #aaa;
     z-index: 1;
   }
-  
+
   .navbar .menu-items li {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
@@ -357,45 +355,45 @@ footer {
   }
 
 }
-  
+
 @media (max-width: 500px) {
-html {
-  font-size: 65%;
-}
+  html {
+    font-size: 65%;
+  }
 
-.navbar .menu-items li{
-  margin-top: 65px;
-  font-size: 1.6rem;
-}
+  .navbar .menu-items li{
+    margin-top: 65px;
+    font-size: 1.6rem;
+  }
 
-.logo-img {
-  /* position: absolute; */
-  /* margin-left: 60px; */
-  float: left;
-  width: 50px;
-  position: absolute;
-  margin-top: 7.5px;
-  left: 15px;
-  font-size: 2rem;
-  top: 6px;
-}
+  .logo-img {
+    /* position: absolute; */
+    /* margin-left: 60px; */
+    float: left;
+    width: 50px;
+    position: absolute;
+    margin-top: 7.5px;
+    left: 15px;
+    font-size: 2rem;
+    top: 6px;
+  }
 
-.logo-text {
-  margin-top: 25px;
-  margin-left: 95px;
-  float: left;
-}
+  .logo-text {
+    margin-top: 25px;
+    margin-left: 95px;
+    float: left;
+  }
 
-.logo-text span {
-  font-size: 120%;
-  font-weight: 500;
-}
+  .logo-text span {
+    font-size: 120%;
+    font-weight: 500;
+  }
 
-.navbar .menu-items li {
-  margin-bottom: 2.5rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }
 
 /* try for icons stick */
