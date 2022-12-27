@@ -540,6 +540,29 @@ footer {
        transform: rotate(-35deg);
     }
 
+    .float-container {
+        margin: 20px 10px ;
+    }
+
+  .catalouge-item {
+		margin-left: 20%;
+		overflow: hidden;
+		top: 50%;
+		padding: 3px;
+		width: 60%;
+		height: 210px;
+		background: linear-gradient(to right, red, purple);
+		justify-content: center;
+	}
+
+    .container {
+        width: auto;
+        height: 260px;
+        border: 5px;
+        margin: 10px 10px;
+        background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
+    }
+
     .product-page {
         width: auto;
         height: auto;
@@ -555,6 +578,15 @@ footer {
 
     .text {
        text-align: center;
+    }
+
+    .float-child {
+        flex: 50%;
+        max-width: 33%;
+        background-image: linear-gradient(to right, #c9c5b3 , rgb(166, 166, 237));
+        padding: 5px;
+        box-shadow: 0px 5px 10px 5px rgb(80, 19, 19);
+        height: 40%;
     }
 
     .lightbox-target {
