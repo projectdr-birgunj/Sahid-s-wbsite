@@ -26,7 +26,7 @@ nav {
   background: #d3d3d3;
   border-radius: 35px;
   padding: 0px 20px;
-  line-height: 50px !important;
+  line-height: 5px !important;
   margin: auto;
 }
 
@@ -483,19 +483,6 @@ footer {
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
     z-index: 1;
-    }
-
-    .carousel-inner {
-      z-index:-1;
-    }
-
-    .carousel-control-prev {
-        z-index:1;
-        background-color: 2px solid black;
-    }
-
-    .carousel-control-next{
-        color: black;
     }
 
     .navbar .menu-items li {
