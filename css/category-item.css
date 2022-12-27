@@ -167,7 +167,7 @@ nav {
   background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
 }
 
-.product-page#blur .active {
+.product-page #blur .active {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
