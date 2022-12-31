@@ -632,7 +632,7 @@ footer {
 	
   .container {
     width: auto;
-    height: 260px;
+    height: auto;
     border: 5px;
     margin: 10px 10px;
     background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));

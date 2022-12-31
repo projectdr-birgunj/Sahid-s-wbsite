@@ -111,6 +111,18 @@ nav {
   color: #333;
 }
 
+.paragraph {
+  display: flex;
+  justify-content: center;
+  margin: 10px 40px 10px 40px;
+  font-family: 'Candal', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 500%;
+  font-size: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #name {
   border: 5px;
   margin: 5px;
@@ -215,6 +227,7 @@ a.lightbox img {
   justify-content: center;
 }
   
+
 /* Styles the close link, adds the slide down transition */
   
 a.lightbox-close {
