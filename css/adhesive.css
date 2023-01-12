@@ -156,20 +156,23 @@ nav {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 .card {
+  margin: auto;
   margin-top: 65px;
   display: flex;
   position: relative;
-  width: 95%;
+  width: 70%;
   height: 190px;
   background: rgb(250, 250, 250);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.38);
   transition: 0.5s;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   z-index: 1;
 }
 
 .card:hover {
+  margin-top: 140px;
+  width: 85%;
   height: 350px;
   margin-top: 4rem;
 }
@@ -189,8 +192,8 @@ nav {
 }
 
 .card:hover .imgBx {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
 }
 
 .imgBx img {
@@ -703,15 +706,19 @@ footer {
   }
 
   .row {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
   }
 
   .card {
+    margin-left: auto;
+    margin-right: auto; 
     height: 130px;
   }
 
   .card:hover {
-    height: 250px;
+    margin-top: 100px;
+    width: 95%;
+    height: 300px;
   }
 
   .card .content .details {
@@ -732,8 +739,8 @@ footer {
   }
   
   .card:hover .imgBx {
-    width: 110px;
-    height: 110px;
+    width: 200px;
+    height: 200px;
   }
 
   .card .content .details {
