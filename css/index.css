@@ -131,7 +131,7 @@ body {
   }
 }
 
-@media (width <= 425px) {
+@media screen and (max-width: 425px) {
   html {
     font-size: 65%;
   }
