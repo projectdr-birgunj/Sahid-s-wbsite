@@ -17,6 +17,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.carousel-inner {
+  z-index:-1;
+}
+
+.carousel-control-prev {
+  z-index:1;
+  background-color: 2px solid black;
+}
+
 /* CATEGORY SECTION STARTS  */
 
 .float-container {
@@ -85,9 +94,14 @@ body {
 
 /* Media Queries */
 
-@media (width >= 768px) {
+@media (425 < width <= 768px) {
   .carousel-inner {
     z-index:-1;
+    height: 45vh;
+  }
+
+  .carousel-item img {
+    height: 45vh;
   }
 
   .navbar {
@@ -108,10 +122,15 @@ body {
 		top: 50%;
 		padding: 3px;
 		width: 60%;
-		height: 280px;
+		height: auto;
 		background: linear-gradient(to right, red, purple);
 		justify-content: center;
 	}
+
+  .float-container {
+    width: auto;
+    grid-template-columns: 50% 50%;
+  }
 	
 	.text {
 		text-align: center;
@@ -120,10 +139,10 @@ body {
 	.float-child {
 		flex: 50%;
 		max-width: 50%;
-		background-image: linear-gradient(to right, #c9c5b3 , rgb(166, 166, 237));
+		background: rgb(250, 250, 250);
 		padding: 5px;
 		/* border: 2px solid red; */
-    height: 40%;
+    height: auto;
 	}
 
   .float-child a img {
@@ -131,13 +150,20 @@ body {
   }
 }
 
-@media (width >= 425px) {
+@media screen and (width <= 425px) {
   html {
     font-size: 65%;
   }
 
   .navbar {
     margin-bottom: 5px;
+  }
+  .carousel-inner {
+    height: 30vh;
+  }
+
+  .carousel-item img {
+    height: 30vh;
   }
 
   .float-container {
@@ -146,8 +172,7 @@ body {
   }
 
   .float-child {
-    width: 90%;
-    height: 23rem;
+    height: 45vh;
     /* margin: 0; */
     /* display: block; */
     /* float: left; */
@@ -162,10 +187,11 @@ body {
   } 
 
   .float-child img {
+    justify-content: center;
     margin: 10%;
     /* margin-right: 105%; */
-    width: 90%;
-    height: 80%;
+    width: 20vh;
+    height: 30vh;
   }
 }
 

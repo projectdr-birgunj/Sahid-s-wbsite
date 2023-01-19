@@ -152,7 +152,7 @@ nav {
       }
   
       .navbar .menu-items {
-      padding-top: 100px;
+      padding-top: 1vh;
       background: #fff;
       height: 100vh;
       max-width: 300px;
