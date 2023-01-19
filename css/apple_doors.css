@@ -191,10 +191,12 @@ a.lightbox-close:after {
   }
 
   .column img {
+    position: relative;
     width: 80%;
   }
 
   .lightbox-target {
+    /* position: absolute; */
     left: 5%; 
     margin-top: 10rem;
     width: 90%;
