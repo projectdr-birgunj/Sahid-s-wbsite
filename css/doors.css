@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to right, rgb(180, 173, 173), rgb(240, 216, 240));
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.about {
+    margin-top: 50px;
+    display: flex;
+    font-weight: 1000;
+    justify-content: center;
+    color: #333;
+}
+
+#name {
+    border: 5px;
+    margin: 30px 5px;
+    font-size: 1.5rem;
+}
+
+.float-container {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.column {
+    width: 90%;
+    /* margin: 1rem 3%; */
+    margin: auto;
+    height: 60vh;
+    /* padding:20px; */
+    border-radius: 20px;
+    background: rgb(250, 250, 250);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.38);
+} 
+
+.column img {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+	width: 85%;
+	height: 50vh;
+	padding: 3px;
+	background: linear-gradient(to right, red, purple);
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+    .row {
+        grid-template-columns: 100%;
+    }   
+}
