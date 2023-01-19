@@ -152,7 +152,7 @@ nav {
       }
   
       .navbar .menu-items {
-      padding-top: 1vh;
+      padding-top: 20vh;
       background: #fff;
       height: 100vh;
       max-width: 300px;
@@ -211,41 +211,42 @@ nav {
 }
 
 @media (max-width: 425px) {
-    html {
-      font-size: 65%;
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items {
+    padding-top: 1vh;
     }
-  
-    .navbar .menu-items li{
-      margin-top: 65px;
-        font-size: 1.6rem;
-    }
-  
-    .logo-img {
-      /* position: absolute; */
-      /* margin-left: 60px; */
-      float: left;
-      width: 50px;
-      position: absolute;
-      margin-top: 7.5px;
-      left: 15px;
-      font-size: 2rem;
-      top: 6px;
-    }
-  
-    .logo-text {
-      margin-top: 25px;
-      margin-left: 95px;
-      float: left;
-    }
-  
-    .logo-text span {
-      font-size: 120%;
-      font-weight: 500;
-    }
-  
-    .navbar .menu-items li {
-      margin-bottom: 2.5rem;
-      font-size: 1.8rem;
-      font-weight: 500;
-    }
+
+  .logo-img {
+    /* position: absolute; */
+    /* margin-left: 60px; */
+    float: left;
+    width: 50px;
+    position: absolute;
+    margin-top: 7.5px;
+    left: 15px;
+    font-size: 2rem;
+    top: 6px;
+  }
+
+  .logo-text {
+    margin-top: 25px;
+    margin-left: 95px;
+    float: left;
+  }
+
+  .logo-text span {
+    font-size: 120%;
+    font-weight: 500;
+  }
+
+    
+  .navbar .menu-items li{
+    margin-top: 65px;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }  
