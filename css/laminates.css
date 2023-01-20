@@ -71,3 +71,24 @@ body {
     margin: 30px 5px;
     font-size: 1.5rem;
 }
+
+@media (max-width: 425px) {
+    .row {
+        grid-template-columns: 100%;
+    }   
+    .row1 {
+        grid-template-columns: 100%;
+    }   
+
+    .column {
+        position: relative;
+        left: 8%;
+        margin: 20px;
+        width: 75%;
+        height: 60vh;
+    }
+
+    .column img {
+        width: 80%;
+    }
+}
