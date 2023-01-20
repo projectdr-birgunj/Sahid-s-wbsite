@@ -1,95 +1,95 @@
 /* FOOTER SECTION STARTS  */
 footer {
-    background: #1e3161;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: #2f4374 0 10px 20px 5px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    color: white;
-  }
+  background: #1e3161;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: #2f4374 0 10px 20px 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
   
-  .main {
-    width: 100%;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-  .heading {
-    margin-bottom: 15px;
-  }
-  .col1 {
-    padding-left: 0%;
-    flex: 1;
-    min-width: 200px;
-  }
-  .col2 {
-    flex: 2;
-    min-width: 300px;
-  }
-  .col3 {
-    flex: 1;
-    min-width: 200px;
-  }
+.main {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.heading {
+  margin-bottom: 15px;
+}
+.col1 {
+  padding-left: 0%;
+  flex: 1;
+  min-width: 200px;
+}
+.col2 {
+  flex: 2;
+  min-width: 300px;
+}
+.col3 {
+  flex: 1;
+  min-width: 200px;
+}
   
-  .col1 a {
-    text-decoration: none;
-    display: inline-block;
-    /* padding: 7px 0; */
-    color: white;
-    font-size: 18px;
-  }
-  .col1 a:hover {
-    color: #58bed5;
-  }
-  
-  .col1 ul {
-    list-style-type: none;
-    padding-left: 5px;
-  }
-  
-  .col1 li {
-    list-style-type: none;
-    padding-left: 0%;
-  }
-  
-  .col2 .email {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-size: 14px;
-  }
-  .col2 a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 3px 5px;
-    border-radius: 3px;
-    color: white;
-    font-size: 18px;
-  }
-  .col2 a:hover {
-    background: #58bed5;
-  }
-  
-  .social {
-    display: flex;
-    gap: 25px;
-  
-  }
-  .col3 ion-icon {
-    font-size: 35px;
-    color: white;
-  }
-  .social a:hover ion-icon {
-    color: #5ac1d8;
-  }
-  
+.col1 a {
+  text-decoration: none;
+  display: inline-block;
+  /* padding: 7px 0; */
+  color: white;
+  font-size: 18px;
+}
+.col1 a:hover {
+  color: #58bed5;
+}
+
+.col1 ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.col1 li {
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.col2 .email {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+}
+.col2 a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+}
+.col2 a:hover {
+  background: #58bed5;
+}
+
+.social {
+  display: flex;
+  gap: 25px;
+
+}
+.col3 ion-icon {
+  font-size: 35px;
+  color: white;
+}
+.social a:hover ion-icon {
+  color: #5ac1d8;
+}
+
   
   /* FOOTER SECTION ENDS  */
 
@@ -98,54 +98,53 @@ footer {
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-    position: fixed;
-    top: 50%;
-    right: 0%;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-30%);
-    transform: translateY(-10%);
-  }
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-10%);
+}
   
-  /* Style the icon bar links */
-  .icon-bar a {
-    margin: 5px 0;
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
+/* Style the icon bar links */
+.icon-bar a {
+  margin: 5px 0;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  /* background: #3B5998; */
+  background: rgb(35,116,225);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+}
   
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
-    background-color: #000;
-  }
-  
-  .facebook {
-    /* background: #3B5998; */
-    background: rgb(35,116,225);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    color: white;
-  }
-  
-  .twitter {
-    background: #55ACEE;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    color: white;
-  }
-  
-  .whatsapp {
-    background: #12be21;  
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    color: white;
-  }
-  
-  .icon-bar ion-icon {
-    font-size: 25px;
-  }
-  
+.whatsapp {
+  background: #12be21;  
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.icon-bar ion-icon {
+  font-size: 25px;
+}
