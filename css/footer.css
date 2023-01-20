@@ -115,7 +115,7 @@ footer {
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 1500%;
 }
 
 /* Style the social media icons with color, if you want */
@@ -125,26 +125,27 @@ footer {
 
 .facebook {
   /* background: #3B5998; */
+  font-size: 200px;
   background: rgb(35,116,225);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  color: white;
+  /* color: white; */
 }
 
 .twitter {
-  background: #55ACEE;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  color: white;
+  /* color: white; */
 }
   
 .whatsapp {
   background: #12be21;  
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  color: white;
+  /* color: white; */
 }
 
-.icon-bar ion-icon {
+ion-icon.md.hydrated {
   font-size: 25px;
 }
