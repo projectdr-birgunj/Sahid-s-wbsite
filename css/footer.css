@@ -104,6 +104,7 @@ footer {
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-30%);
   transform: translateY(-10%);
+  z-index: 1000;
 }
   
 /* Style the icon bar links */
@@ -115,7 +116,6 @@ footer {
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 1500%;
 }
 
 /* Style the social media icons with color, if you want */
@@ -136,14 +136,14 @@ footer {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* color: white; */
+  color: white;
 }
   
 .whatsapp {
   background: #12be21;  
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* color: white; */
+  color: white;
 }
 
 ion-icon.md.hydrated {
