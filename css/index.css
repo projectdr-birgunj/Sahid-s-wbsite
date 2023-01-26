@@ -17,6 +17,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.carousel-item {
+  z-index: 999;
+}
 .carousel-inner {
   z-index:-1;
 }
@@ -90,6 +93,13 @@ body {
 }
 
 @media (max-width: 425px) {
+  .carousel-inner {
+    height: 30vh;
+  }
+
+  .carousel-item img {
+    height: 30vh;
+  }
   .float-container {
     grid-template-columns: 100%;
   } 

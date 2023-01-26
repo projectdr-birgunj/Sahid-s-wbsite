@@ -71,3 +71,41 @@ body {
     margin: 30px 5px;
     font-size: 1.5rem;
 }
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    margin: 10px 40px 10px 40px;
+    font-family: 'Candal', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (max-width: 425px) {
+    
+    .paragraph {
+        font-weight: 550;
+        font-size: 1.5rem;
+    }
+    .row {
+        grid-template-columns: 100%;
+    }   
+    .row1 {
+        grid-template-columns: 100%;
+    }   
+
+    .column {
+        position: relative;
+        left: 8%;
+        margin: 20px;
+        width: 75%;
+        height: 60vh;
+    }
+
+    .column img {
+        width: 80%;
+    }
+}

@@ -17,92 +17,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-}
-
-.menu-highlight{
-  background: #d3d3d3;
-  border-radius: 35px;
-  padding: 0px 20px;
-  line-height: 5px !important;
-  margin: auto;
-}
-
-.navbar {
-  padding: 0%;
-  box-shadow: 0px 5px 10px 0px #aaa;
-  position: sticky;
-  width: 100%;
-  background: #fff;
-  color: #000;
-  opacity: 0.85;
-  height: 65px;
-  z-index: 12;
-}
-
-.logo-img {
-  margin: 5px 10px 5px 20px;
-  display: block;
-  width: 80%;
-  height: 50px;
-  object-fit: contain;
-}
-
-.logo-text {
-  font-size: 1rem;
-  display: block;
-  margin: 10px;
-  padding: 0px;
-  margin-left: 0px;
-}
-
-.logo-text span {
-  font-size: 1.5rem;
-}
-
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-  display: none;
-}
-
-.navbar-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  height: 64px;
-}
-
-.menu-items {
-  width: auto;
-  margin: 15px 30px;
-
-  display: flex;
-}
-
-.menu-items li {
-  /* float: right; */
-  list-style: none;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.menu-items a {
-  text-decoration: none;
-  color: #444;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-.menu-items a:hover {
-  color: #117964;
-  transition: color 0.3s ease-in-out;
-}
-
-/* CATEGORY SECTION STARTS  */
-
 .about {
   margin-top: 50px;
   display: flex;
@@ -111,90 +25,64 @@ nav {
   color: #333;
 }
 
-.paragraph {
-  display: flex;
-  justify-content: center;
-  margin: 10px 40px 10px 40px;
-  font-family: 'Candal', sans-serif;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 500%;
-  font-size: 2rem;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#name {
-  border: 5px;
-  margin: 5px;
-  font-size: 1.5rem;
-}
-
-.product-page #blur .active {
+.float-container #blur .active {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
 
-.product-page {
-  /* display: flex; */
-  width: auto;
-  height: auto;
-  border: 5px;
-  margin: 80px 80px;
-  background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
+.float-container {
+  margin: 30px;
+  margin-top: 40px;
 }
 
-
-.column {
-  float: left;
-  /* width: 33.33%; */
-  padding: 10px 10px 5px 10px;
-  padding-bottom: 3px;
-}
-
-.column img {
-  width: 100%;
-  height: 88%;
-  border-width: 4px;
-  border-style: solid;
-  border-image: linear-gradient(to right,#4b6cb7, #182848) 1;
-}
-
-/* Clear floats after image containers */
 .row {
-  border-width: 3px;
-  margin-bottom: 0px;
-  /* content: ""; */
-  /* clear: both; */
-  justify-content: center;
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-/* Trial for enlarge image  */
-/*Eliminates padding, centers the thumbnail */
+.column {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  height: 80vh;
+  border-radius: 15px;
+  background: rgb(250, 250, 250);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.38);
+} 
 
+.column img {
+  display: block;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 70vh;
+  padding: 3px;
+  background: linear-gradient(to right, red, purple);
+  border-width: 0px;
+  border-style: solid;
+  border-image: linear-gradient(to right,#4b6cb7, #182848) 1;
+  cursor: pointer;
+}
 
-  
-/* Styles the thumbnail */
-  
-a.lightbox img {
-  /* height: 150px; */
+/* a .lightbox img {
+  margin: auto;
+  margin-top: 25px;
   padding: 3px;
   border: 3px ;
   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   margin: 10px 5px 10px 5px;
   background: linear-gradient(to right, red, purple);
-}
-  
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-  
+} */
+
 .lightbox-target {
   position: fixed;
-  margin-top: 65px;
-  left: 10%; 
+  margin-top: 5rem;
+  left: 25%; 
   /* width: 75%; */
   /* background: rgba(0,0,0,.7); */
-  width: 100%;
+  width: 50%;
   opacity: 0;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -204,19 +92,18 @@ a.lightbox img {
   justify-content: center;
 }
   
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-  
 .lightbox-target img {
   margin: auto;
   /* margin-top: 65px; */
-  position: relative;
-  top: 0;
-  left: 0%;
-  right: 0%;
+  /* position: relative; */
+  top: 2vh;
+  left: 0;
+  right: 10%;
   bottom: 0;
   max-height: 0%;
   max-width: 0%;
-  width: auto;
+  width: 70%;
+  height: 75vh;
   border: 5px solid white;
   /* box-shadow: 80px 80px 80px rgba(0,0,0,.3); */
   box-sizing: border-box;
@@ -226,10 +113,7 @@ a.lightbox img {
   transition: .5s ease-in-out;
   justify-content: center;
 }
-  
 
-/* Styles the close link, adds the slide down transition */
-  
 a.lightbox-close {
   /* display: block; */
   width:50px;
@@ -247,9 +131,7 @@ a.lightbox-close {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
-  
-/* Provides part of the "X" to eliminate an image from the close link */
-  
+
 a.lightbox-close:before {
   content: "";
   display: block;
@@ -264,9 +146,6 @@ a.lightbox-close:before {
   -o-transform:rotate(45deg);
   transform:rotate(45deg);
 }
-  
-/* Provides part of the "X" to eliminate an image from the close link */
-  
 a.lightbox-close:after {
   content: "";
   display: block;
@@ -281,9 +160,7 @@ a.lightbox-close:after {
   -o-transform:rotate(-45deg);
   transform:rotate(-45deg);
 }
-  
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-  
+
 .lightbox-target:target {
   opacity: 1;
   top: 0;
@@ -300,422 +177,35 @@ a.lightbox-close:after {
   top: 0;
 }
 
-/* CATEGORY SECTIONN ENDS  */
+@media (max-width: 425px) {
+  .row {
+    grid-template-columns: 100%;
+  }   
 
-/* FOOTER SECTION STARTS  */
-footer {
-  background: #1e3161;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 50px;
-  border-radius: 15px 15px 0px 0px;
-  box-shadow: #2f4374 0 10px 20px 5px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  color: white;
-}
+  .column {
+    position: relative;
+    left: 8%;
+    margin: 20px;
+    width: 75%;
+    z-index: auto;
+    height: 80vh;
+  }
 
-.main {
-  width: 100%;
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-.heading {
-  margin-bottom: 15px;
-}
-.col1 {
-  padding-left: 0%;
-  flex: 1;
-  min-width: 200px;
-}
-.col2 {
-  flex: 2;
-  min-width: 300px;
-}
-.col3 {
-  flex: 1;
-  min-width: 200px;
-}
+  .column img {
+    position: relative;
+    width: 80%;
+  }
 
-.col1 a {
-  text-decoration: none;
-  display: inline-block;
-  /* padding: 7px 0; */
-  color: white;
-  font-size: 18px;
-}
-.col1 a:hover {
-  color: #58bed5;
-}
-
-.col1 ul {
-  list-style-type: none;
-  padding-left: 5px;
-}
-
-.col1 li {
-  list-style-type: none;
-  padding-left: 0%;
-}
-
-.col2 .email {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 14px;
-}
-.col2 a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 3px 5px;
-  border-radius: 3px;
-  color: white;
-  font-size: 18px;
-}
-.col2 a:hover {
-  background: #58bed5;
-}
-
-.social {
-  display: flex;
-  gap: 25px;
-
-}
-.col3 ion-icon {
-  font-size: 35px;
-  color: white;
-}
-.social a:hover ion-icon {
-  color: #5ac1d8;
-}
-
-
-/* FOOTER SECTION ENDS  */
-
-/* Media Queries */
-
-@media only screen and (min-width: 768px) {
   .lightbox-target {
-    position: fixed;
-    top: 0%;
-    left: 25%; 
-    width: 50%;
-    object-fit: cover;
-  }
-
-  .lightbox-target img {
-    margin: auto;
-    /* margin-top: 65px; */
-    position: relative;
-    top: 10%;
-    left: 7%;
-    right: 10%;
-    bottom: 0;
-    width: 85%;
-    height: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    opacity: 0.95;
-  }
-
-  .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
-    display: block;
-  }
-
-  .navbar-container {
-    border: 1px solid white;
-    display: block;
-    position: relative;
-    /* height: 60px; */
-  }
-
-  .navbar-container input[type="checkbox"] {
-    position: absolute;
-    display: block;
-    height: 30px;
-    width: 30px;
-    top: 20px;
-    right: 20px;
-    z-index: 5;
-    opacity: 0;
-  }
-
-  .navbar-container .hamburger-lines {
-    display: block;
-    height: 23px;
-    width: 35px;
-    position: absolute;
-    top: 19px;
-    right: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-    .navbar-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #333;
-    }
-
-    .navbar-container .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-    }
-
-    .navbar .menu-items {
-    padding-top: 100px;
-    background: #fff;
-    height: 100vh;
-    max-width: 300px;
-    transform: translate(-150%);
-    display: flex;
-    flex-direction: column;
-    margin-top: 65px;
-    margin-left: -40px;
-    padding-left: 50px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
-    z-index: 1;
-    }
-
-    .carousel-inner {
-      z-index:-1;
-    }
-
-    .carousel-control-prev {
-        z-index:1;
-        background-color: 2px solid black;
-    }
-
-    .carousel-control-next{
-        color: black;
-    }
-
-    .navbar .menu-items li {
-        margin-bottom: 1.5rem;
-        font-size: 1.3rem;
-        font-weight: 500;
-    }
-
-    .logo-img {
-        float: left;
-        width: 50px;
-        position: absolute;
-        margin-top: 7.5px;
-        left: 15px;
-        font-size: 2rem;
-    }
-
-    .logo-text {
-        margin-top: 15px;
-        margin-left: 95px;
-        float: left;
-    }
-
-    .logo-text span {
-        font-size: 120%;
-        font-weight: 500;
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-        transform: translateX(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-       transform: rotate(35deg);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-       transform: scaleY(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-       transform: rotate(-35deg);
-    }
-
-    .float-container {
-        margin: 20px 10px ;
-    }
-
-  .catalouge-item {
-		margin-left: 20%;
-		overflow: hidden;
-		top: 50%;
-		padding: 3px;
-		width: 60%;
-		height: 210px;
-		background: linear-gradient(to right, red, purple);
-		justify-content: center;
-	}
-
-    .container {
-        width: auto;
-        height: 260px;
-        border: 5px;
-        margin: 10px 10px;
-        background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
-    }
-
-    .product-page {
-        width: auto;
-        height: auto;
-        border: 5px;
-        margin: 20px;
-        background: linear-gradient(to right, rgb(235, 162, 162), rgb(179, 174, 179));
-    }
-
-    .column img {
-        width: 100%;
-        /* height: 170px; */
-    }
-
-    .text {
-       text-align: center;
-    }
-
-    .float-child {
-        flex: 50%;
-        max-width: 33%;
-        background-image: linear-gradient(to right, #c9c5b3 , rgb(166, 166, 237));
-        padding: 5px;
-        box-shadow: 0px 5px 10px 5px rgb(80, 19, 19);
-        height: 40%;
-    }
-
-    .lightbox-target {
-        position: fixed;
-        top: 0%;
-        left: 5%; 
-        right: 5%;
-        margin-left: 0;
-        width: 90%;
-        object-fit: cover;
-    }
-
-    .lightbox-target img {
-        margin: auto;
-        /* margin-top: 65px; */
-        position: relative;
-        top: 15%;
-        left: 7%;
-        right: 10%;
-        bottom: 0;
-        width: 85%;
-        height: 80%;
-    }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 65%;
-  }
-
-  .navbar .menu-items li{
-    margin-top: 65px;
-      font-size: 1.6rem;
-  }
-
-  .logo-img {
     /* position: absolute; */
-    /* margin-left: 60px; */
-    float: left;
-    width: 50px;
-    position: absolute;
-    margin-top: 7.5px;
-    left: 15px;
-    font-size: 2rem;
-    top: 6px;
+    left: 5%; 
+    margin-top: 10rem;
+    width: 90%;
+    z-index: auto;
+    /* z-index: -1; */
   }
 
-  .logo-text {
-    margin-top: 25px;
-    margin-left: 95px;
-    float: left;
-  }
+  /* .lightbox-target img {
 
-  .logo-text span {
-    font-size: 120%;
-    font-weight: 500;
-  }
-
-  .navbar .menu-items li {
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .showcase-area {
-    height: 50vmax;
-  }
-}
-
-
-/* try for icons stick */
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  right: 0%;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-30%);
-  transform: translateY(-10%);
-}
-
-/* Style the icon bar links */
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.whatsapp {
-  background: #12be21;
-  color: white;
-}
-
-.icon-bar ion-icon {
-  font-size: 25px;
+  } */
 }
