@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^home?$ index.html
+RewriteRule ^category?$ category.html
+RewriteRule ^about?$ about.html
+RewriteRule ^contact?$ contact.html
