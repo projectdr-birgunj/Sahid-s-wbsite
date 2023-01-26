@@ -76,6 +76,7 @@ a {
 	height: 50vh;
 	padding: 3px;
 	background: linear-gradient(to right, red, purple);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
