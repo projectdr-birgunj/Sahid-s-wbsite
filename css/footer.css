@@ -1,10 +1,15 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 /* FOOTER SECTION STARTS  */
 footer {
   background: #1e3161;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: auto;
   border-radius: 15px 15px 0px 0px;
   box-shadow: #2f4374 0 10px 20px 5px;
   padding: 30px;
