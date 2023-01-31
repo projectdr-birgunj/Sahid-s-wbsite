@@ -18,16 +18,20 @@ body {
 }
 
 .carousel-item {
-  z-index: 999;
+  z-index: 1;
 }
 .carousel-inner {
-  z-index:-1;
+  z-index: 1;
+}
+
+.carousel-indicators {
+  z-index: inherit;
 }
 
 .carousel-control-prev {
-  z-index:1;
+  z-index: inherit;
   background-color: 2px solid black;
-}
+} 
 
 /* CATEGORY SECTION STARTS  */
 
