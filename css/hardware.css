@@ -11,7 +11,8 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(180, 173, 173), rgb(240, 216, 240));
+    /* background: linear-gradient(to right, rgb(180, 173, 173), rgb(240, 216, 240)); */
+    background: #D5DCE4;
     margin: 0%;
     padding: 0%;
     font-family: "Poppins", sans-serif;
@@ -49,11 +50,14 @@ a {
 }
 
 .float-container {
-    margin: 20px;
-    margin-top: 40px;
+    background-color: #fff;
+    margin: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.38);
 }
-
+  
 .row {
+    margin: 60px 20px;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
 }
