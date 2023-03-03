@@ -18,7 +18,7 @@ position: sticky;
 width: 100%;
 background: #3e5064;
 color: #000;
-opacity: 0.85;
+opacity: 1;
 height: auto;
 z-index: 1;
 }
@@ -95,7 +95,7 @@ transition: color 0.3s ease-in-out;
       width: 50px;
     }
     .navbar {
-       opacity: 0.95;
+       opacity: 1;
     }
 
     .navbar-container input[type="checkbox"],
