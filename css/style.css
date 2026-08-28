@@ -419,6 +419,9 @@ p { margin: 0 0 1em; }
   gap: 16px;
 }
 .gallery-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--white);
@@ -439,7 +442,7 @@ p { margin: 0 0 1em; }
 .gallery-item .cap .zoom-hint { font-size: 0.72rem; color: var(--brand); font-weight: 600; white-space: nowrap; }
 .gallery-item:hover { box-shadow: var(--shadow-md); border-color: var(--brand-light); }
 
-.pdf-item .cap a { color: var(--brand); font-weight: 600; }
+.pdf-item { cursor: pointer; }
 
 /* ---------- Lightbox ---------- */
 .lightbox {
