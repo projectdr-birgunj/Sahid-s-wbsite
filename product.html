@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Category | Amaan Door & Hardware Suppliers</title>
+  <link rel="icon" href="img/thumb/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header"><div id="site-header"></div></header>
+
+  <main>
+    <div class="page-hero" style="text-align:left;padding-bottom:0;">
+      <div class="container">
+        <div class="crumbs"><a href="category.html">Category</a> / <span id="crumb-current">…</span></div>
+        <h1 id="cat-title" style="margin-bottom:4px;">…</h1>
+        <p id="cat-blurb" style="color:var(--ink-soft);max-width:640px;"></p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:28px;">
+      <div class="container" id="gallery-root"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div id="site-footer"></div></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const key = params.get("cat");
+      const cat = CATALOG[key];
+      const root = document.getElementById("gallery-root");
+
+      if (!cat) {
+        root.innerHTML = `<p>We couldn't find that category. <a href="category.html">Back to all categories</a>.</p>`;
+        return;
+      }
+
+      document.title = cat.title + " | Amaan Door & Hardware Suppliers";
+      document.getElementById("page-title").textContent = cat.title + " | Amaan Door & Hardware Suppliers";
+      document.getElementById("cat-title").textContent = cat.title;
+      document.getElementById("crumb-current").textContent = cat.title;
+      document.getElementById("cat-blurb").textContent = cat.blurb || "";
+
+      root.innerHTML = cat.groups
+        .map((group, gi) => {
+          const items = group.items
+            .map((item) => {
+              if (item.pdf) {
+                return `
+                  <div class="gallery-item pdf-item">
+                    <div class="lazy-frame">
+                      <img data-src="img/thumb/${item.img}.webp" alt="${item.name}">
+                    </div>
+                    <div class="cap">
+                      <span>${item.name}</span>
+                      <a href="${item.pdf}" target="_blank" rel="noopener">Open PDF ↗</a>
+                    </div>
+                  </div>`;
+              }
+              return `
+                <div class="gallery-item"
+                     data-lightbox-item
+                     data-lightbox-group="cat-${gi}"
+                     data-thumb="img/thumb/${item.img}.webp"
+                     data-full="img/full/${item.img}.webp"
+                     data-name="${item.name}">
+                  <div class="lazy-frame">
+                    <img data-src="img/thumb/${item.img}.webp" alt="${item.name}">
+                  </div>
+                  <div class="cap">
+                    <span>${item.name}</span>
+                    <span class="zoom-hint">🔍 Zoom</span>
+                  </div>
+                </div>`;
+            })
+            .join("");
+
+          return `
+            <div class="group-block">
+              ${group.label ? `<div class="group-title">${group.label}</div>` : ""}
+              ${group.blurb ? `<div class="group-blurb">${group.blurb}</div>` : ""}
+              <div class="gallery-grid">${items}</div>
+            </div>`;
+        })
+        .join("");
+
+      window.SiteUI.initLazyImages(root);
+      window.SiteUI.initLightboxes(root);
+    })();
+  </script>
+</body>
+</html>

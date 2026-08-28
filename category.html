@@ -1,135 +1,56 @@
-<!DOCKTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-	<title>ADH-Category</title>
-  	<link rel="icon" href="./img/logo.jpg" type="image/icon type">
-	<link rel="stylesheet" href="./css/category.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | Amaan Door & Hardware Suppliers</title>
+  <meta name="description" content="Browse doors, ply, laminates, glass, hardware, nets, beats, adhesive, PVC edge banding and kitchen tools.">
+  <link rel="icon" href="img/thumb/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html"><img src="./img/logo.jpg " alt="" class="logo-img"></a>
-		    <div class="logo-text"><span>Amaan Door & Hardware Suppliers</span></div>   
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+
+  <header class="site-header"><div id="site-header"></div></header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Full catalogue</span>
+        <h1>Browse every category</h1>
+        <p>Tap a category to view the full gallery. Every photo opens in full quality — pinch or scroll to zoom in on the details.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="cat-grid" id="all-cat-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div id="site-footer"></div></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const grid = document.getElementById("all-cat-grid");
+      grid.innerHTML = CATEGORY_ORDER.map((key) => {
+        const cat = CATALOG[key];
+        const count = cat.groups.reduce((n, g) => n + g.items.length, 0);
+        return `
+          <a class="cat-card" href="product.html?cat=${key}">
+            <div class="img-wrap lazy-frame">
+              <img data-src="img/thumb/${cat.cover}.webp" alt="${cat.title}">
             </div>
-			<ul class="menu-items">
-                <li><a href="index.html">Home</a></li>
-				<li><a href="category.html" class='menu-highlight'>Category</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-	<div class="icon-bar">
-		<!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-		<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-		<a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a> -->
-		<a href=https://www.facebook.com/Ammandoor class="facebook">
-			<ion-icon name="logo-facebook"></ion-icon>
-		</a>
-		<a href="https://instagram.com/amaandoor?igshid=YmMyMTA2M2Y=" class="instagram">
-			<ion-icon name="logo-instagram"></ion-icon>
-		</a>
-		<a href="https://api.whatsapp.com/send?phone=+9779802057804" class="whatsapp">
-			<ion-icon name="logo-whatsapp"></ion-icon>
-		</a>
-	</div>
-
-	<div class="float-container">
-		<div class="float-child">
-			<a href="./category_src/Doors.html"><img src="./img/Apple_doors_4.png"  alt=""></a>
-		  	<div class="text"><a href="./category_src/Doors.html">Doors</a></div>
-		</div>
-		<div class="float-child">
-			<a href="./category_src/ply.html"><img src="./img/ply_poster.png"  alt=""></a>
-		  	<div class="text"><a href="./category_src/ply.html">Ply</a></div>
-		</div>
-		<div class="float-child">
-			<a href="./category_src/laminates.html"><img src="./img/laminated.png"  alt=""></a>
-			<div class="text"><a href="./category_src/laminates.html">Laminates</a></div>
-        </div>
-        <div class="float-child">
-            <a href="./category_src/glass.html"><img src="./img/GLASS.JPG"  alt=""></a>
-            <div class="text"><a href="./category_src/glass.html">Glass</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/hardware.html"><img src="./img/door_handle_poster.png"  alt=""></a>
-            <div class="text"><a href="./category_src/hardware.html">Hardwares</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/nets.html"><img src="./img/net.jpg"  alt=""></a>
-            <div class="text"><a href="./category_src/nets.html">Nets</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/beats.html"><img src="./img/beats-1.JPG"  alt=""></a>
-            <div class="text"><a href="./category_src/beats.html">Beats</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/adhesive.html"><img src="./img/Adhesive-1.JPG"  alt=""></a>
-            <div class="text"><a href="./category_src/adhesive.html">Adhesive</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/pvc_edge.html"><img src="./img/pvc-edge-banding.jpg"  alt=""></a>
-            <div class="text"><a href="./category_src/pvc_edge.html">PVC Edge</a></div>
-        </div>
-		<div class="float-child">
-            <a href="./category_src/kitchen_tools.html"><img src="./img/kitchen-tools2.PNG"  alt=""></a>
-            <div class="text"><a href="./category_src/kitchen_tools.html">Kitchen Tools</a></div>
-        </div>
-	</div>
-	
-	<footer>
-		<div class="main">
-		  <div class="col1">
-			<h3 class="heading">
-			  About the store
-			</h3>
-			<ul>
-			  <li><a href="./index.html">Home</a></li>
-			  <li><a href="./category.html">Category</a></li>
-			  <li><a href="./about.html">About us</a></li>
-			</ul>
-		  </div>
-	  
-		  <div class="col2">
-			<h3 class="heading">Created By:</h3>
-			<div class="email">
-				<a href = "mailto: projectdr.birgunj@gmail.com">Send Mail</a>
-			</div>
-		  </div>
-	  
-		  <div class="col3">
-			<h3 class="heading">Get in touch</h3>
-			<div class="social">
-			  <a href=https://www.facebook.com/Ammandoor>
-				<ion-icon name="logo-facebook"></ion-icon>
-			  </a>
-			  <a href="https://instagram.com/amaandoor?igshid=YmMyMTA2M2Y=">
-				<ion-icon name="logo-instagram"></ion-icon>
-			  </a>
-			  <a href="https://api.whatsapp.com/send?phone=+9779802057804">
-				<ion-icon name="logo-whatsapp"></ion-icon>
-			  </a>
-			</div>
-		  </div>
-		</div>
-	</footer>
-	  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+            <div class="label">${cat.title}<small>${count} photo${count === 1 ? "" : "s"}</small></div>
+          </a>`;
+      }).join("");
+      window.SiteUI.initLazyImages(grid);
+    })();
+  </script>
 </body>
 </html>
-			
-
-			
