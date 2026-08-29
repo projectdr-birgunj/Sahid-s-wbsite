@@ -56,15 +56,15 @@
             .map((item) => {
               if (item.pdf) {
                 return `
-                  <div class="gallery-item pdf-item">
+                  <a class="gallery-item pdf-item" href="${item.pdf}" target="_blank" rel="noopener">
                     <div class="lazy-frame">
                       <img data-src="img/thumb/${item.img}.webp" alt="${item.name}">
                     </div>
                     <div class="cap">
                       <span>${item.name}</span>
-                      <a href="${item.pdf}" target="_blank" rel="noopener">Open PDF ↗</a>
+                      <span class="zoom-hint">Open PDF ↗</span>
                     </div>
-                  </div>`;
+                  </a>`;
               }
               return `
                 <div class="gallery-item"
